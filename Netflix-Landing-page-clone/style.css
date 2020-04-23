@@ -130,6 +130,8 @@ form.example input[type=text] {
   height: 60px;
   width: 550px;
   background: #f1f1f1;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
 
 }
 
@@ -145,6 +147,8 @@ form.example button {
   inline-size: auto;
   border-left: none;
   cursor: pointer;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 form.example button:hover {
@@ -164,6 +168,7 @@ form.example::after {
 	padding-top: 1rem;
 	border-bottom: 3px solid #3d3d3d;
 	border-right: none;
+
 }
 
 .tabs .container {
@@ -173,11 +178,20 @@ form.example::after {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	color: grey;
 }
 
 .tabs p {
 	font-size: 1.2rem;
 	padding-top: 0.5rem;
+	color: grey;
+}
+.tabs i{
+	color: grey;
+}
+
+.container :hover{
+	color: white;
 }
 
 .tabs .container > div {
@@ -185,7 +199,7 @@ form.example::after {
 }
 
 .tabs .container > div:hover {
-	color: #fff;
+	color: white;
 	cursor: pointer;
 }
 
